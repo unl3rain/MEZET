@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Montserrat:wght@700&display=swap');
+
+/* Далее идут ваши существующие :root, body и другие стили */
 :root {
     --primary-pink: #F33283;
     --accent-pink: #FF8084;
@@ -51,6 +53,12 @@ h3 { font-size: 1.8em; }
     color: var(--white); /* Делаем шрифт белым */
     /* Возможно, вы захотите немного увеличить размер для этих заголовков, чтобы они выделялись еще сильнее */
     font-size: 3.5em;
+}
+
+.hero-section h1 .logo-font {
+    font-family: 'Montserrat', sans-serif; /* Применяем Montserrat */
+    /* Цвет останется розовым, так как h1 уже имеет color: var(--primary-pink); */
+    /* Если нужно изменить цвет, добавьте: color: var(--some-other-color); */
 }
 
 p {
@@ -118,6 +126,8 @@ p {
     font-size: 2em;
     font-weight: bold;
     color: var(--primary-pink);
+    /* Добавляем Josefin Sans к логотипу в навигации */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-links {
